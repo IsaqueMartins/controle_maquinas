@@ -1,0 +1,21 @@
+
+h1 {
+    text-align:  center;
+    font-size: 50px;
+    font-weight: 800;
+    color: #005cbf;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.form{
+    text-align: center;
+}
+
+.head-pg{
+    text-align: center;
+    margin: auto;
+}
+.img-pg{
+    text-align: center;
+}
+
