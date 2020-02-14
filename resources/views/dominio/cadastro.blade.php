@@ -17,11 +17,11 @@
             </div>
 
             <div class="form-group">
-                <input type="text" name="ip_dns_interno" placeholder="IP Interno:" class="form-control" value="{{$alterar->ip_dns_interno or old ('ip_dns_interno')}}">
+                <input type="text" name="ip_dns_interno" placeholder="IP DNS Interno:" class="form-control" value="{{$alterar->ip_dns_interno or old ('ip_dns_interno')}}">
             </div>
 
             <div class="form-group">
-                <input type="text" name="ip_dns_externo" placeholder="IP Externo:" class="form-control" value="{{$alterar->ip_dns_externo or old ('ip_dns_externo')}}">
+                <input type="text" name="ip_dns_externo" placeholder="IP DNS Externo:" class="form-control" value="{{$alterar->ip_dns_externo or old ('ip_dns_externo')}}">
             </div>
 
 
