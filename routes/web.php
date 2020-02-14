@@ -52,7 +52,7 @@ Route::get('/inicial', 'MaquinaController@index');
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicial');
 });
 
 \Event::listen('Illuminate\Database\Events\QueryExecuted', function ($query) {
