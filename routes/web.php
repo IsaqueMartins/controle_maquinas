@@ -41,7 +41,7 @@ Route::group(['prefix'=>'virtuais'], function() {
 });
 
 Route::group(['prefix'=>'virtualdominio'], function(){
-    Route::get('/maquina/{id}', 'VirtualDominioController@vinculomaquina');
+    Route::get('/maquina/{id_dominio}', 'VirtualDominioController@vinculomaquina');
     Route::post('/salvar', 'VirtualDominioController@salvar');
 
 });
