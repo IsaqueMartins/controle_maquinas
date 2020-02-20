@@ -70,7 +70,7 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                 <a class="dropdown-item" >Alterar</a>
-                                <a class="dropdown-item" >Excluir</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="deletar({{}})" >Excluir</a>
 
 
                             </div>
@@ -82,6 +82,17 @@
             </tr>
             @endforeach
     </table>
+
+    <script type="text/javascript">
+
+        function deletar(id) {
+            if ( confirm("Deseja realmente excluir este registro?") )
+            {
+                window.location.href = baseUrl+'virtualdominio/deletar'+'/'+id;
+            }
+        }
+
+    </script>
 
 
 

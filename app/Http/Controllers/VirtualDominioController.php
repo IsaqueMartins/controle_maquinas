@@ -29,9 +29,9 @@ class VirtualDominioController extends Controller
             'listaMaquinas'     => $listaMaquinas,
             'title'             => $title,
             'listaDominio'      => $listaDominio,
-            //  'id_dominio'        => $request->id,
-            'vinculados'        => $vinculados,
-            // 'id_maq_virtual'    => $id_maq_virtual=0,
+            'id_dominio'        => $request->id,
+            'vinculados'        => $vinculados, 
+            'id_maq_virtual'    => $id_maq_virtual=0,
 
         ];
 
@@ -53,7 +53,7 @@ class VirtualDominioController extends Controller
         $virtualDominio->inserir($arrayDados);
 
         if ($virtualDominio->inserir($arrayDados)){
-            return redirect('dominios/maquina'.$request->id_maq_fisica);
+            return redirect('dominios/lista'.$request->id_maq_fisica);
         };
 
     }
